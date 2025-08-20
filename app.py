@@ -24,7 +24,7 @@ def run_and_submit_all( profile: gr.OAuthProfile | None):
     Fetches all questions, runs the BasicAgent on them, submits all answers,
     and displays the results.
     """
-    # --- Determine HF Space Runtime URL and Repo URL ---
+    # ---- Determine HF Space Runtime URL and Repo URL ----
     space_id = os.getenv("SPACE_ID") # Get the SPACE_ID for sending link to the code
 
     if profile:
